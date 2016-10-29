@@ -1,0 +1,41 @@
+doctype html
+html(lang='eng')
+    head
+        title Andrew Egorcev
+        meta(charset='utf-8')
+        meta(
+            name='viewport'
+            content='width=device-width, initial-scale=1.0'
+        )
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900', rel='stylesheet')
+        link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+        link(rel='stylesheet', type='text/css', href='styles/index.css')
+    body 
+        .calculator-container
+            .calculator
+                .content-wrapper
+                    .calculator-display 0
+                    .calculator-keys
+                        .row(class='clearfix')
+                            button.key(value='AC') AC
+                            button.key(value='CE') CE
+                            button.key(value='÷') ÷
+                            button.key(value='*' style='font-family: Lato;') *
+                        .row(class='clearfix')
+                            button.key(value='7') 7
+                            button.key(value='8') 8
+                            button.key(value='9') 9
+                            button.key(value='-') -
+                        .row(class='clearfix') 
+                            button.key(value='4') 4
+                            button.key(value='5') 5
+                            button.key(value='6') 6
+                            button.key(value='+') +
+                        .row(class='clearfix')
+                            button.key(value='1') 1
+                            button.key(value='2') 2
+                            button.key(value='3') 3
+                            button.key(value='=') =
+                            button.key(value='0') 0
+                            button.key(value='.') .
+        script(src='js/index.js' async)    

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+// @font-face
+//     font-family: 'digital-7';
+//     src: url('../fonts/DS-Digital.ttf.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+    
+@font-face 
+    font-family: 'DS-Digital'
+    src url('../fonts/DS-Digital.ttf.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+*
+    box-sizing border-box
+html 
+    height 100%
+
+body
+    height 100%
+    font: normal 16px/1.2 DS-Digital, Lato, sans-serif
+    background-color #4e5860
+
+
+
+.calculator-container
+    position relative
+    height 100%
+
+.calculator
+    position absolute
+    top 50%
+    left 50%
+    width 392px
+    height 422px;
+    transform translate(-50%, -50%)
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: inset 0 -4px 0 rgba(23, 16, 25, 0.2), 0 1px 3px rgba(23, 16, 25, 0.2);
+    box-shadow 0 0 10px rgba(0,0,0,0.07), 0 21px 20.2px 0.8px rgba(0,0,0,0.15)
+    padding 41px 21px 21px
+    
+.content-wrapper
+    width: 350px;
+    margin 0 auto
+
+
+// Fix ios tel numbers not to be clickable
+a[href^=tel] 
+    color inherit 
+    text-decoration: none 
+
+.calculator-display
+    // height: 60px;
+    background-color: #1c1c1c;
+    border: 1px solid #171019;
+    border-radius: 5px 4px 4px 5px;
+    box-shadow: inset 0 1px 3px rgba(23, 16, 25, 0.45), 0 2px 0 white;
+    padding 0 19px
+    font-size 52px
+    color #fff
+    line-height 60px
+    margin-bottom 30px
+    text-align right
+    transition all .5s
+    .intermediate
+        height: 20px;
+        font-size: 20px;
+        /* vertical-align: top; */
+        line-height: 20px;
+    // vertical-align middle
+    // color: #2c2c2c
+    // display table
+    // display flex
+    // display table
+    // width 100%
+    // position relative
+    // line-height 50px
+    // vertical-align middle
+    // align-content center
+    // align-items center
+    // line-height 0
+        
+.inactive
+    color: #292929
+    
+button {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+.calculator-keys
+    // width auto
+    width 350px
+        
+    // .dot
+        // width 75*2 + 17px
+        
+.key
+    // padding 0
+    
+    width 75px
+    height 42px
+.key + .key
+    // margin-left 16px
+.equal-sign
+    position relative
+    .key
+        position: absolute
+        top 0
+        bottom 0
+        // right 0
+        // left 0
+        height auto
+        
+.dot
+    width 75*2 + 17px
+    
+
+.row 
+    width 100%
+    // display flex
+    // flex-direction row
+    // justify-content flex-start
+    // font-size 0
+    padding 0
+    button 
+        // display inline-block
+        // font-size 16px
+        // width 25%
+        // margin auto
+        float left
+        font-family Lato, sans-serif
+    button
+        margin-right: 16px
+        margin-bottom 13px
+        background-color #f4f4f4
+        border: 1px solid #e4e4e4;
+        border-radius: 5px 4px 4px 5px;
+        color: #666;
+        font-size: 20px;
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 2px 2px 0px #666
+        cursor pointer
+        outline none
+        &:active
+             box-shadow: 0px 0px 0px 0px #666
+    button:nth-of-type(4)
+        margin 0
+        float right
+        
+.clearfix:before,
+.clearfix:after
+    content: " "
+    display: table
+
+
+.clearfix:after 
+    clear: both
+
+
+
+
+.row:nth-of-type(4) button:nth-of-type(4)
+    height 13 + 42 + 42px
+    
+.row:nth-of-type(4) button:nth-of-type(6)
+    width 16 + 75 + 75px
