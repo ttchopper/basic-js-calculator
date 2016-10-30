@@ -8189,7 +8189,7 @@ var index =
 	    var c = void 0;
 	    var ce = 0;
 	    // Using delegation 
-	    calculator.onclick = function () {
+	    calculator.onclick = function (event) {
 	
 	        var element = event.target;
 	        var display = this.querySelector('.calculator-display');
